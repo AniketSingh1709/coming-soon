@@ -1,0 +1,24 @@
+server:
+  name: "ComingSoonApp"
+  root: "C:\\inetpub\\wwwroot\\MyWebsite"
+  port: 80
+  bindings:
+    - protocol: "http"
+      host: "localhost"
+      port: 400
+  logging:
+    enabled: true
+    log_directory: "C:\\inetpub\\logs\\LogFiles"
+  default_document:
+    enabled: true
+    files:
+      - "index.html"
+  mime_types:
+    - extension: ".html"
+      type: "text/html"
+    - extension: ".css"
+      type: "text/css"
+    - extension: ".js"
+      type: "application/javascript"
+    - extension: ".svg"
+      type: "image/svg+xml"
